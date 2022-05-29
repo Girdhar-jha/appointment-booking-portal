@@ -1,0 +1,43 @@
+.pika
+{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family:'Merriweather', serif;
+  margin-top:20px;
+}
+input{
+  margin:30px;
+}
+.btn{
+  margin-top: 20px;
+}
+.btn:hover{
+  zoom:150%;
+filter:drop-shadow(16px 16px 10px #293042);
+font-family: 'Josefin Sans', sans-serif;
+
+  transform:skewx(2deg);
+}
+body{
+  background-image:url("Untitled design3.gif") ;
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+#h1{
+  font-weight: 600;
+}
+.alpha{
+  margin:20px;
+    color:#3f80ea;
+}
+.pika{
+  font-weight: bold;
+}

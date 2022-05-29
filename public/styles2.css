@@ -1,0 +1,56 @@
+
+ form{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  text-align: left;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+/* label{
+  margin:20px 0;
+
+} */
+input{
+  margin:0 0 0 20;
+}
+.zampa{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+    color: #3f80ea;
+    margin-top:80px;
+}
+.form{
+  margin-left:20%;
+}
+.alpha{
+  margin-top: 10px;
+margin-bottom: 10px;
+text-align: left;
+font-family:'Merriweather', serif;
+}
+div{
+  text-align: left;
+}
+body {
+ background-image:url("Untitled design.gif") ;
+ background-position: center;
+ background-size: cover;
+}
+.centre{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction:row;
+}
+.btn{
+  margin-top: 20px;
+}
+.btn:hover{
+  zoom:150%;
+filter:drop-shadow(16px 16px 10px #293042);
+font-family: 'Josefin Sans', sans-serif;
+
+  transform:skewx(2deg);
+}

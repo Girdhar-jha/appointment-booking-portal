@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ATTENDENCE BOOKING SYSYTEM</title>
+  <link rel="stylesheet" href="styles3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:ital,wght@0,400;1,700&family=Montserrat:wght@800&family=Sacramento&family=Tapestry&family=Ubuntu+Mono:ital@1&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="pika">
+    <div class="alpha">
+      <h1 id="h1">Appointment booking Portal</h1>
+    </div>
+    <div class="alpha">
+      <h1 id="h1">(Admin)</h1>
+    </div>
+    <div class="alpha">
+      <h3 id="h1">Today's Booked slots:</h3>
+    </div>
+    <div class="pika">
+      <table class="table table-striped-columns">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">DOCUMENT type</th>
+            <th scope="col">DOCno</th>
+            <th scope="col">Phone no</th>
+            <th scope="col">Email</th>
+            <th scope="col">Photo</th>
+            <th scope="col">time</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%array.forEach(function(arr){%>
+          <tr>
+            <td><%=arr.name%></td>
+            <td><%=arr.age%></td>
+            <!-- <th scope="row">3</th> -->
+            <td><%=arr.docType%></td>
+            <td><%=arr.docNo%></td>
+            <td><%=arr.phoneNo%></td>
+            <td><%=arr.email%></td>
+            <td><%=arr.photo%></td>
+            <td><%=arr.time%></td>
+            <td><%=arr.date%></td>
+          </tr>
+          <%});%>
+        </tbody>
+      </table>
+    </div>
+    <div class="alpha">
+      <form class="" action="/face-recognition" method="post">
+        <button type="submit" name="button" class="btn btn-primary">Verify a user</button>
+      </form>
+    </div>
+
+  </div>
+  <br><br><br>
+
+</body>
+
+</html>
