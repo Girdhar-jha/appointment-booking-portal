@@ -1,5 +1,5 @@
 # appointment-booking-portal
-[PRESS HERE FOR DEMO](https://appointment-booking-portal.herokuapp.com/)
+[PRESS HERE FOR BOOKING AN APPOINTMENT](https://appointment-booking-portal.herokuapp.com/)
 
 Here you can book appointments in just 2 minutes.
 
