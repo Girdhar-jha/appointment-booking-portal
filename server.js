@@ -78,7 +78,7 @@ app.post("/submit",(req,res)=>{
   arr.push(input);
   res.sendFile(__dirname+"/views/submit.html");
 })
-app.listen(Process.env.PORT||3000, () => console.log('Listening on port 3000!'))
+app.listen(Process.env.PORT, () => console.log('Listening on port 3000!'))
 
 function request(url, returnBuffer = true, timeout = 10000) {
   return new Promise(function(resolve, reject) {
