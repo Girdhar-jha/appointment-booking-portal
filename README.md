@@ -1,5 +1,5 @@
 # appointment-booking-portal
-[DEMO](https://appointment-booking-portal.herokuapp.com/)
+[PRESS HERE FOR DEMO](https://appointment-booking-portal.herokuapp.com/)
 Here you can book appointments in just 2 minutes.
 The website generally has two interfaces one for the admin and the other for the user.
 when you press the user button you are directed to a page where you can fill a form to book your appointment once this is done and user presses submit button than it shows 
