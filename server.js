@@ -31,15 +31,19 @@ app.post('/fetch_external_image', async (req, res) => {
     return res.status(404).send(err.toString())
   }
 })
+//when user fills the appointment booking form
 app.post("/user",(req,res)=>{
   res.sendFile(path.join(viewsDir, 'user.html'));
 })
+//when user press verify a user button
 app.post("/face-recognition",(req,res)=>{
   res.sendFile(__dirname+"/views/faceRecognition.html");
 })
+//open admin page where the data relate to user is stored
 app.post("/admin",(req,res)=>{
   res.render(__dirname+"/views/Admin.ejs",{array:arr});
 })
+//takes to verified web page when user press verifir=ed button
 app.post("/verify",(req,res)=>{
   res.sendFile(__dirname+"/views/verify.html");
 })
@@ -52,6 +56,7 @@ var date1 = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
       arr.pop();
     }
   });
+  //stores form data when user press submit button
 app.post("/submit",(req,res)=>{
   var name = req.body.name;
   var age =req.body.age;
@@ -62,6 +67,7 @@ app.post("/submit",(req,res)=>{
   var photo = req.body.photo;
   var time = req.body.time;
   var date = req.body.date;
+  //creating a object to store information
   var input = {
     name:name,
     age:age,
@@ -75,9 +81,11 @@ app.post("/submit",(req,res)=>{
   };
   console.log(input);
   // console.log(date1);
+  //storing object inside array
   arr.push(input);
   res.sendFile(__dirname+"/views/submit.html");
 })
+//setting the server
 app.listen(process.env.PORT||3000, () => console.log('Listening on port 3000!'))
 
 function request(url, returnBuffer = true, timeout = 10000) {
