@@ -69,3 +69,11 @@ border-radius:50px;
     font-family:'Merriweather', serif;
     font-style: italic;
 }
+.mop{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  align-content: center;
+  text-align: center;
+}
