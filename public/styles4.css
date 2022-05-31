@@ -16,13 +16,32 @@
 .alpha{
     color:#3f80ea;
 animation: zoom-in-zoom-out 5s ease infinite;
+margin-top: 5px;
+margin-bottom: 10px;
 }
 
-.pika{
+.tree{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin:auto;
   margin-top: 15%;
+}
+.pika{
+  text-align:center;
+  width:200px;
+  height:100px;
+
+  font-size: 30px;
+  font-weight: 400;
+  font-family:'Merriweather', serif;
+  margin-top:20px;
+}
+.pika:hover{
+  zoom:150%;
+filter:drop-shadow(16px 16px 10px #293042);
+font-family: 'Josefin Sans', sans-serif;
+border-radius:50px;
+  transform:skewx(2deg);
 }

@@ -85,6 +85,10 @@ app.post("/submit",(req,res)=>{
   arr.push(input);
   res.sendFile(__dirname+"/views/submit.html");
 })
+//directing to home route
+app.post("/home",(req,res)=>{
+  res.sendFile(__dirname+"/views/index.html");
+})
 //setting the server
 app.listen(process.env.PORT||3000, () => console.log('Listening on port 3000!'))
 
