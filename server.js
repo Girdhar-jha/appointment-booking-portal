@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, '/media')))
 app.use(express.static(path.join(__dirname, '/weights')))
 app.use(express.static(path.join(__dirname, '/dist')))
 app.set('view engine', 'ejs');
-app.get('/', (req, res) => res.redirect('/face_recognition'))
+app.get('/', (req, res) => res.redirect('/index.html'))
 app.get('/face_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'faceRecognition.html')))
 
 app.post('/fetch_external_image', async (req, res) => {
